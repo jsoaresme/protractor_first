@@ -1,0 +1,37 @@
+{
+  "name": "google",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wlsf82/curso-tat-protractor"
+  },
+  "scripts": {
+    "webdriver:update": "webdriver-manager update",
+    "test:chrome": "npm run webdriver:update && protractor protractorChrome.conf.js",
+    "test": "npm run test:chrome"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "eslint": "^4.9.0",
+    "express": "~4.15.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.13",
+    "morgan": "~1.8.1"
+  },
+  "devDependencies": {
+    "backstopjs": "^3.1.19",
+    "chai": "^4.1.2",
+    "eslint-config-google": "^0.9.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.0.0",
+    "protractor": "^5.3.1",
+    "protractor-flake": "^3.2.0",
+    "protractor-helper": "^3.2.6",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "supertest": "^3.0.0",
+    "webdriverio": "^4.2.3"
+  }
+}
